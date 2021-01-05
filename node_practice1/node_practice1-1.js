@@ -1,16 +1,10 @@
 const asyncFunc = () => {
-    // return new Promise(r => {
-    //     setTimeout(() => {
-    //         console.log('Running!');
-    //         r();
-    //     }, 1000);
-    // });
-    return (r) => {
+    return new Promise((r) => {
         setTimeout(() => {
             console.log("Running!");
             r();
         }, 1000);
-    };
+    });
 };
 
 (async() => {
