@@ -9,6 +9,6 @@ const asyncFunc = () => {
 
 (async() => {
     console.log("Calling async func!");
-    asyncFunc();
+    await asyncFunc();
     console.log("async func called");
 })();
